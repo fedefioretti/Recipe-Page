@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 html, body{
-    height: 100%;
+    width: 100vw;
+    height: auto;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -15,11 +16,12 @@ html, body{
 main{
     width: 800px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .outfit-font {
@@ -173,8 +175,8 @@ p, li{
 }
 
 .footer {
-  position: absolute;
-  bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+  position: relative;
+  margin-top: auto; /* Ajusta la distancia desde la parte inferior */
   width: 100%;
   text-align: center;
   font-family: 'Outfit', sans-serif; /* Ajusta la fuente según lo necesites */
