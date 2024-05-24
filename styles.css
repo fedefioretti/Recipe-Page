@@ -219,8 +219,8 @@ p, li{
 @media (max-width: 375px) {
   main {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   
   .recipe {
@@ -253,8 +253,13 @@ p, li{
   }
   
   .fact {
-    left: auto;
     right: 20px;
+  }
+
+  .footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -267,7 +272,7 @@ p, li{
   .recipe {
     padding: 20px;
   }
-  
+
   .preparation {
     padding: 8px 20px;
   }
