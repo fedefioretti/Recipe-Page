@@ -2,27 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 html, body{
-    width: 100vw;
-    height: auto;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(30, 54%, 90%);
-    
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 54%, 90%);
+  box-sizing: border-box;
 }
 
 main{
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 70px;
-    margin-bottom: 60px;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 70px;
+  margin-bottom: 60px;
 }
 
 .outfit-font {
@@ -35,49 +37,49 @@ main{
 }
 
 .recipe{
-    width: 100%;
-    background-color: hsl(0, 0%, 100%);
-    margin: 20px;
-    padding: 20px 40px;
-    box-sizing: border-box;
-    border-radius: 30px;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  margin: 20px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  border-radius: 30px;
 }
 
 .preparation{
-    background-color: hsl(330, 100%, 98%);
-    margin-top: 30px;
-    padding: 8px 0 10px 30px;
-    font-family: 'Outfit';
-    border-radius: 10px;
-    color: hsl(24, 5%, 18%);
+  background-color: hsl(330, 100%, 98%);
+  margin-top: 30px;
+  padding: 8px 0 10px 30px;
+  font-family: 'Outfit';
+  border-radius: 10px;
+  color: hsl(24, 5%, 18%);
 }
 
 .omelette{
-    width: 100%;
-    height: 295px;
-    display:block;
-    margin: 15PX auto;
-    border-radius: 12.5px;
+  width: 100%;
+  height: auto;
+  display:block;
+  margin: 15PX auto;
+  border-radius: 12.5px;
 }
 
 h1{
-    font-family: 'Young-serif';
-    color: hsl(24, 5%, 18%);
-    font-size: 40px;
-    margin-bottom: 15px;
+  font-family: 'Young-serif';
+  color: hsl(24, 5%, 18%);
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 
 h2{
-    font-family: 'Young-serif';
-    font-size: 25px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    color: hsl(14, 45%, 36%);
+  font-family: 'Young-serif';
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: hsl(14, 45%, 36%);
 }
 
 h3{
-    font-size: 20px;
-    color: hsl(332, 51%, 32%);
+  font-size: 20px;
+  color: hsl(332, 51%, 32%);
 }
 .info{
   margin-bottom: 35px;
@@ -95,62 +97,62 @@ hr{
 
 /* Aplica negrita a los números de los ítems de la lista */
 ol {
-    counter-reset: item;
-    list-style: none; /* Elimina los estilos de lista por defecto */
-    padding-left: 10px; /* Elimina el padding por defecto */
-  }
-  
-  ol li {
-    counter-increment: item;
-    margin-bottom: 7px; /* Espacio entre los ítems */
-    padding-left: 30px; /* Espacio para los números */
-    position: relative; /* Para posicionar los números */
-    line-height: 24.5px;
-    color: hsl(24, 5%, 18%);
-  }
-  
-  ol li::before {
-    content: counter(item) ". ";
-    font-weight: bold; /* Negrita para los números */
-    position: absolute;
-    left: 0; /* Alinea los números a la izquierda */
-    color: hsl(14, 45%, 36%);
-  }
-  
-  ol li strong {
-    font-weight: bold; /* Negrita para el resumen */
-    color: hsl(24, 5%, 18%);
-  }
-  
-  .description {
-    font-weight: normal; /* Texto normal para la descripción */
-    color: hsl(24, 5%, 18%);
-  }
+  counter-reset: item;
+  list-style: none; /* Elimina los estilos de lista por defecto */
+  padding-left: 10px; /* Elimina el padding por defecto */
+}
+
+ol li {
+  counter-increment: item;
+  margin-bottom: 7px; /* Espacio entre los ítems */
+  padding-left: 30px; /* Espacio para los números */
+  position: relative; /* Para posicionar los números */
+  line-height: 24.5px;
+  color: hsl(24, 5%, 18%);
+}
+
+ol li::before {
+  content: counter(item) ". ";
+  font-weight: bold; /* Negrita para los números */
+  position: absolute;
+  left: 0; /* Alinea los números a la izquierda */
+  color: hsl(14, 45%, 36%);
+}
+
+ol li strong {
+  font-weight: bold; /* Negrita para el resumen */
+  color: hsl(24, 5%, 18%);
+}
+
+.description {
+  font-weight: normal; /* Texto normal para la descripción */
+  color: hsl(24, 5%, 18%);
+}
 
 ul {
-    list-style-type: none;
-    padding-left: 8px;
+  list-style-type: none;
+  padding-left: 8px;
 }
-  
-  ul li {
-    margin-bottom: 12px;
-    padding-left: 30px;
-    position: relative;
-    color: hsl(24, 5%, 18%);
-  }
 
-  ul li::before {
-    content: ".";
-    color: hsl(332, 51%, 32%);
-    position: absolute;
-    left: 0;
-    font-size: 2.2em;
-    line-height: 0;
-  }
- 
+ul li {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  color: hsl(24, 5%, 18%);
+}
+
+ul li::before {
+  content: ".";
+  color: hsl(332, 51%, 32%);
+  position: absolute;
+  left: 0;
+  font-size: 2.2em;
+  line-height: 0;
+}
+
 .ingredients, .instructions {
-    margin-bottom: 35px;
-    color: hsl(24, 5%, 18%);
+  margin-bottom: 35px;
+  color: hsl(24, 5%, 18%);
 }
 
 .nutrition-facts {
@@ -181,9 +183,9 @@ hr {
 }
 
 p, li{
-    font-family: 'Outfit';
-    font-size: 16px;
-    color: hsl(24, 5%, 18%);
+  font-family: 'Outfit';
+  font-size: 16px;
+  color: hsl(24, 5%, 18%);
 }
 
 .footer {
@@ -192,6 +194,7 @@ p, li{
   width: 100%;
   text-align: center;
   font-family: 'Outfit', sans-serif; /* Ajusta la fuente según lo necesites */
+  z-index: 10;
 }
 
 .footer p {
@@ -208,4 +211,88 @@ p, li{
 
 .footer a:first-of-type {
   margin-left: 0; /* Elimina el margen izquierdo para el primer enlace */
+}
+
+/* Media queries para responsividad */
+
+/* Para móviles */
+@media (max-width: 375px) {
+  main {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .recipe {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .preparation {
+    padding: 5px 10px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  p, li {
+    font-size: 14px;
+  }
+  
+  .nutrition {
+    padding-left: 20px;
+  }
+  
+  .fact {
+    left: auto;
+    right: 20px;
+  }
+}
+
+/* Para tabletas */
+@media (min-width: 376px) and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  
+  .recipe {
+    padding: 20px;
+  }
+  
+  .preparation {
+    padding: 8px 20px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  p, li {
+    font-size: 15px;
+  }
+  
+  .nutrition {
+    padding-left: 25px;
+  }
+  
+  .fact {
+    right: 25px;
+  }
 }
