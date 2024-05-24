@@ -6,6 +6,7 @@ html, body{
   height: auto;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Evitar desplazamiento lateral */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,10 +191,10 @@ p, li{
 
 .footer {
   position: relative;
-  margin-top: auto; /* Ajusta la distancia desde la parte inferior */
+  margin-top: auto; 
   width: 100%;
   text-align: center;
-  font-family: 'Outfit', sans-serif; /* Ajusta la fuente según lo necesites */
+  font-family: 'Outfit', sans-serif;
   z-index: 10;
 }
 
@@ -206,17 +207,16 @@ p, li{
 .footer a {
   text-decoration: none;
   color: hsl(332, 51%, 32%);
-  margin-left: 4px; /* Ajusta el espacio entre el texto y el enlace */
+  margin-left: 4px; 
+  word-break: break-all;
 }
 
 .footer a:first-of-type {
   margin-left: 0; /* Elimina el margen izquierdo para el primer enlace */
 }
 
-/* Media queries para responsividad */
-
 /* Para móviles */
-@media (max-width: 375px) {
+@media (max-width: 350px) {
   main {
     width: 100%;
     margin-top: 10px;
@@ -253,6 +253,7 @@ p, li{
   }
   
   .fact {
+    margin-left: 0;
     right: 20px;
   }
 
