@@ -252,14 +252,19 @@ p, li{
   }
   
   .fact {
-    margin-left: 0;
-    right: 80px;
+    position: static; /* Para que se posicione en el flujo del documento */
+    margin-left: auto; /* Para alinear a la derecha */
+    padding-left: 20px;
   }
 
   .footer {
     display: block;
     justify-content: center;
     align-items: center;
+  }
+
+  .footer p {
+    font-size: 10px;
   }
 }
 
