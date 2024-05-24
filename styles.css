@@ -246,6 +246,10 @@ p, li{
   p, li {
     font-size: 14px;
   }
+
+  .nutrition-facts {
+    width: 100%;
+  }
   
   .nutrition {
     padding-left: 20px;
@@ -254,7 +258,7 @@ p, li{
   .fact {
     position: static; /* Para que se posicione en el flujo del documento */
     margin-left: auto; /* Para alinear a la derecha */
-    padding-left: 20px;
+    padding-right: 40px;
   }
 
   .footer {
